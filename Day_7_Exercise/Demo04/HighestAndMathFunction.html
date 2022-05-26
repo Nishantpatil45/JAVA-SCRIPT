@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Highest & Math.max & Math.min</title>
+</head>
+
+<body>
+	<h4>Highest value</h4>
+	<p id="demo1"></p>
+	<script>
+		const number2 = [56, 45, 41, 12, 32];
+		number2.sort(function (a, b) { return b - a });
+		document.getElementById("demo1").innerHTML = number2[0];
+	</script>
+
+	<h4>Lowest value</h4>
+	<p id="demo2"></p>
+	<script>
+		const number1 = [45, 42, 33, 48, 44];
+		number1.sort(function (a, b) { return a - b });
+		document.getElementById("demo2").innerHTML = number1[0];
+	</script>
+
+	<h4>Using Math.MAX</h4>
+	<p id="demo3"></p>
+	<script>
+		const number3 = [45, 42, 33, 48, 44];
+		document.getElementById("demo3").innerHTML = myArrayMax(number3);
+		function myArrayMax(arr) {
+			return Math.max.apply(null, arr);
+		}
+	</script>
+
+	<h4>Using Math.MIN</h4>
+	<p id="demo4"></p>
+	<script>
+		const number4 = [45, 42, 33, 48, 44];
+		document.getElementById("demo4").innerHTML = myArrayMin(number4);
+		function myArrayMin(arr) {
+			return Math.min.apply(null, arr);
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const rollno = new Map();
+        rollno.set("pankaj", 101);
+        rollno.set("gaurav", 102);
+        rollno.set("riza", 103);
+        rollno.get("gaurav");
+        rollno.size;
+        rollno.delete("pankaj");
+        rollno.has("pankaj");
+        let text = "";
+        rollno.forEach(function (value, key) {
+            text += key + ' = ' + value;
+        })
+        document.getElementById("demo").innerHTML = rollno.get("pankaj");
+    </script>
+</body>
+
+</html>

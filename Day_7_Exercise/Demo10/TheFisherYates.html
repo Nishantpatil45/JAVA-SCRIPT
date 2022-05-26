@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Fisher Yates Method</title>
+</head>
+
+<body>
+	<button onclick="myFunct()">Sort Now</button>
+	<p id="demo"></p>
+	<script>
+		const numbers = [45, 22, 16, 48, 54, 85];
+		document.getElementById("demo").innerHTML = numbers;
+		function myFunct() {
+			for (let i = numbers.length - 1; i > 0; i--) {
+				let j = Math.floor(Math.random() * i)
+				let k = numbers[i]
+				numbers[i] = numbers[j]
+				numbers[j] = k
+			}
+			document.getElementById("demo").innerHTML = numbers;
+		}
+	</script>
+
+</body>
+
+</html>

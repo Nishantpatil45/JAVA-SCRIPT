@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Delete & Merge</title>
+</head>
+
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<script>
+		const city1 = ["Mumbai", "Ahmedabad", "Pune"];
+		document.getElementById("demo1").innerHTML = "Second City is: " + city1[1];
+		delete city1[1];
+		document.getElementById("demo2").innerHTML = "Second City is: " + city1[1];
+	</script>
+
+	<p id="demo3"></p>
+	<script>
+		const arr1 = ["Java", "Python"];
+		const arr2 = ["Php", "HTML", "CSS"];
+		const arr3 = ["React", "C"];
+		const proglang = arr1.concat(arr2, arr3);
+		document.getElementById("demo3").innerHTML = proglang;
+	</script>
+
+</body>
+
+</html>

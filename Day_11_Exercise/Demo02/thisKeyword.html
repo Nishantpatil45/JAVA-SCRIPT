@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS Keyword</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            firstName: "Pankaj",
+            lastName: "Patil",
+            rollno: 101,
+            city: "Dhule",
+            personInfo: function () {
+                return this.firstName + " " + this.lastName + " " + this.id + " " + this.city;
+            }
+        };
+        document.getElementById("demo1").innerHTML = person.personInfo();
+    </script>
+
+    <p id="demo2"></p>
+    <script>
+        "use strict";
+        document.getElementById("demo2").innerHTML = myInfo();
+
+        function myInfo() {
+            return this;
+        }
+    </script>
+
+    <p id="demo3"></p>
+    <script>
+        const person1 = {
+            personInfo: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        const person2 = {
+            firstName: "Pankaj",
+            lastName: "Patil",
+        }
+
+        let x = person1.personInfo.call(person2);
+        document.getElementById("demo3").innerHTML = x; 
+    </script>
+</body>
+
+</html>

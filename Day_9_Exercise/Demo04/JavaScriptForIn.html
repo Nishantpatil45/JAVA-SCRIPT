@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript For In</title>
+</head>
+<body>
+	
+	<h4>JavaScript For In</h4>
+	<p id="demo"></p>
+	<script>
+	const student = {id:"09", sname:"pankaj", marks:95}; 
+	let txt = "";
+	for (let x in student) 
+	{
+	  txt += student[x] + " ";
+	}
+	document.getElementById("demo").innerHTML = txt;
+	</script>
+
+</body>
+</html>

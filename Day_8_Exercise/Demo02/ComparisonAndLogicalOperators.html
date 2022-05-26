@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Comparison and Logical Operators</title>
+</head>
+
+<body>
+	<h4>Comparison Operators</h4>
+	<p id="demo1"></p>
+	<script>
+		let a = 7;
+		document.getElementById("demo1").innerHTML = (a == 10);
+	</script>
+
+	<h4> Logical Operators</h4>
+	<p id="demo2"></p>
+	<script>
+		let b = 6;
+		let c = 3;
+		document.getElementById("demo2").innerHTML = (b < 10 && c > 1) + "<br>" +
+			(b < 10 && c < 1);
+	</script>
+
+	<h4>Conditional (Ternary) Operator</h4>
+	<input id="age" value="15" />
+	<button onclick="myFunct()">Check</button>
+	<p id="demo3"></p>
+	<script>
+		function myFunct() {
+			let allowvote;
+			let age = Number(document.getElementById("age").value);
+			if (isNaN(age)) {
+				allowvote = "Input is not a number";
+			}
+			else {
+				allowvote = (age < 18) ? "Not Eligible" : "Eligible";
+			}
+			document.getElementById("demo3").innerHTML = allowvote + " for vote";
+		}
+	</script>
+
+	<h4>Comparing Different Types</h4>
+	<p id="demo4"></p>
+	<script>
+		document.getElementById("demo4").innerHTML = 9 < "pankaj";
+	</script>
+
+</body>
+
+</html>

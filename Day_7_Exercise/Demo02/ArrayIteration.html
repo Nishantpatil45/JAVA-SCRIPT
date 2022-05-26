@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Iteration</title>
+</head>
+
+<body>
+	<p id="demo1"></p>
+	<script>
+		const number1 = [45, 42, 33, 48, 44];
+		let text = "";
+		number1.forEach(myFunction1);
+		document.getElementById("demo1").innerHTML = text;
+		function myFunction1(value, index, array) {
+			text += value + "<br>";
+		}
+	</script>
+
+	<p id="demo2"></p>
+	<script>
+		const numbers2 = [45, 42, 33, 48, 44];
+		const numbers3 = numbers2.map(myFunction2);
+		document.getElementById("demo2").innerHTML = numbers3;
+		function myFunction2(value, index, array) {
+			return value * 2;
+		}
+	</script>
+
+	<p id="demo3"></p>
+	<script>
+		const age = [45, 42, 33, 48, 44];
+		const agegranted = age.filter(myFunct3);
+		document.getElementById("demo3").innerHTML = agegranted;
+		function myFunct3(value, index, array) {
+			return value > 18;
+		}
+	</script>
+
+	<p id="demo4"></p>
+	<script>
+		const num = [45, 42, 33, 48, 44];
+		let sum = num.reduce(myFunct4);
+		document.getElementById("demo4").innerHTML = "Sum of num array is  " + sum;
+		function myFunct4(total, value, index, array) {
+			return total + value;
+		}
+	</script>
+
+	<p id="demo5"></p>
+	<script>
+		const numbers5 = [45, 42, 33, 48, 44];
+		let sum5 = numbers5.reduceRight(myFunct5);
+		document.getElementById("demo5").innerHTML = "The sum is " + sum5;
+		function myFunct5(total, value, index, array) {
+			return total + value;
+		}
+	</script>
+
+	<p id="demo6"></p>
+	<script>
+		const numbers7 = [45, 42, 33, 48, 44];
+		let allOver18 = numbers7.every(myFunct6);
+		document.getElementById("demo6").innerHTML = "All over 18 is " + allOver18;
+		function myFunct6(value, index, array) {
+			return value > 18;
+		}
+	</script>
+
+	<p id="demo7"></p>
+	<script>
+		const numbers = [45, 42, 33, 48, 44];
+		let someOver18 = numbers.some(myFunct7);
+		document.getElementById("demo7").innerHTML = "Some over 18 is " + someOver18;
+		function myFunct7(value, index, array) {
+			return value > 18;
+		}
+	</script>
+
+	<p id="demo8"></p>
+	<script>
+		const city1 = ["Mumbai", "Pune", "Nashik", "Dhule"];
+		let index1 = city1.indexOf("Dhule") + 1;
+		document.getElementById("demo8").innerHTML = "Dhule found at position " + index1;
+	</script>
+
+	<p id="demo9"></p>
+	<script>
+		const city2 = ["Mumbai", "Pune", "Nashik", "Dhule"];
+		let index2 = city2.lastIndexOf("Nashik") + 1;
+		document.getElementById("demo9").innerHTML = "Nashik found at position " + index2;
+	</script>
+
+	<p id="demo10"></p>
+	<script>
+		const numbers10 = [45, 42, 33, 48, 44];
+		let find10 = numbers10.find(myFunct10);
+		document.getElementById("demo10").innerHTML = "First number is greater than 18 is " + find10;
+		function myFunct10(value, index, array) {
+			return value > 18;
+		}
+	</script>
+
+	<p id="demo11"></p>
+	<script>
+		const numbers11 = [45, 42, 33, 48, 44];
+		document.getElementById("demo11").innerHTML = "First number greater than 18 has index " + numbers11.findIndex(myFunct11);
+		function myFunct11(value, index, array) {
+			return value > 18;
+		}
+	</script>
+
+
+	<p id="demo12"></p>
+	<script>
+		const arr12 = Array.from("DIVIESHCHAUDHARI");
+		document.getElementById("demo12").innerHTML = arr12;
+	</script>
+
+</body>
+
+</html>

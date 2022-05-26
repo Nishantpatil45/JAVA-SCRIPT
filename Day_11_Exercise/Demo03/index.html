@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <script>
+        var personInfo;
+
+        personInfo = (val) => "Pankaj " + val;
+
+        document.getElementById("demo1").innerHTML = personInfo("Patil");
+    </script>
+
+    <p id="demo2"></p>
+    <script>
+        var personInfo;
+
+        personInfo = val => "Pankaj " + val;
+
+        document.getElementById("demo2").innerHTML = personInfo("Patil");
+    </script>
+
+    <p id="demo3"></p>
+    <script>
+        var personInfo;
+
+        personInfo = () => {
+            return "Hello World!";
+        }
+
+        document.getElementById("demo3").innerHTML = personInfo();
+    </script>
+
+</body>
+
+</html>

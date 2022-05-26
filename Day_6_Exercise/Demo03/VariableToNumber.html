@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Variable to Number</title>
+</head>
+
+<body>
+	<h2>Variable to Number</h2>
+	<h4>The Number Method</h4>
+	<p id="demo1"></p>
+	<script>
+		document.getElementById("demo1").innerHTML =
+			Number(true) + "<br>" +
+			Number(false) + "<br>" +
+			Number("8") + "<br>" +
+			Number("81,40") + "<br>" +
+			Number("81.40") + "<br>" +
+			Number("21 45") + "<br>" +
+			Number("pankaj");
+	</script>
+
+	<h4>to parseInt</h4>
+	<p id="demo2"></p>
+	<script>
+		document.getElementById("demo2").innerHTML =
+			parseInt("-80") + "<br>" +
+			parseInt("-80.40") + "<br>" +
+			parseInt("80") + "<br>" +
+			parseInt("21.45") + "<br>" +
+			parseInt("90 8") + "<br>" +
+			parseInt("1 pankaj");	
+	</script>
+
+	<h4>to parseFloat</h4>
+	<p id="demo3"></p>
+	<script>
+		document.getElementById("demo3").innerHTML =
+			parseFloat("70") + "<br>" +
+			parseFloat("80.40") + "<br>" +
+			parseFloat("21 45") + "<br>" +
+			parseFloat("1 pankaj")   
+	</script>
+</body>
+
+</html>

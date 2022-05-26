@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Splicing and Slicing Arrays</title>
+</head>
+
+<body>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<script>
+		const city1 = ["Nashik", "Dhule", "Mumbai", "Ahmedabad", "Pune"];
+		document.getElementById("demo1").innerHTML = city1;
+		city1.splice(2, 0, "Delhi", "Chennai");
+		document.getElementById("demo2").innerHTML = city1;
+	</script>
+
+	<h4>Splicing to REMOVE</h4>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<script>
+		const city2 = ["Nashik", "Dhule", "Mumbai", "Ahmedabad", "Pune"];
+		document.getElementById("demo3").innerHTML = city2;
+		city2.splice(0, 1);
+		document.getElementById("demo4").innerHTML = city2;
+	</script>
+
+	<h4>Slicing</h4>
+	<p id="demo5"></p>
+	<script>
+		const city3 = ["Nashik", "Dhule", "Mumbai", "Ahmedabad", "Pune"];
+		const gj = city3.slice(1);
+		document.getElementById("demo5").innerHTML = city3 + "<br><br>" + gj;
+	</script>
+
+</body>
+
+</html>

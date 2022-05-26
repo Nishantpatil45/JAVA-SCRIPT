@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sorting Object Array</title>
+</head>
+
+<body>
+	<p id="demo"></p>
+	<script>
+		const mobile = [
+			{ type: "Samsung", year: 2000 },
+			{ type: "Oppo", year: 2010 },
+			{ type: "Realme", year: 2018 }
+		];
+		mobilephone();
+		mobile.sort(function (a, b) { return a.year - b.year });
+		displayCars();
+		function mobilephone() {
+			document.getElementById("demo").innerHTML =
+				mobile[0].type + " " + mobile[0].year + "<br>" +
+				mobile[1].type + " " + mobile[1].year + "<br>" +
+				mobile[2].type + " " + mobile[2].year;
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>For Loop With Statements</title>
+</head>
+<body>
+
+	<h4>JavaScript For Loop With 3 Statements</h4>
+	<p id="demo"></p>
+	<script>
+	const city = ["Nashik","Dhule","Mumbai","Ahmedabad","Pune"];
+	let i = 0;
+	let len = city.length;
+	let txt = "";
+	for (; i < len; ) 
+	{
+	  txt += city[i] + "<br>";
+	  i++;
+	}
+	document.getElementById("demo").innerHTML = txt;
+	</script>
+
+</body>
+</html>

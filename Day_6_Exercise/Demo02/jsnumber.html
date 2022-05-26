@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Numbers</title>
+</head>
+
+<body>
+
+	<h4>NAN- Not a number</h4>
+	<p id="demo1"></p>
+	<script>
+		let a = 50 / "pankaj";
+		document.getElementById("demo1").innerHTML = isNaN(a);
+	</script>
+
+	<h4>Infinity</h4>
+	<p id="demo2"></p>
+	<script>
+		let b = 2 / 0;
+		let c = -2 / 0;
+		document.getElementById("demo2").innerHTML = b + "<br>" + c;
+	</script>
+
+	<h4>Hexadecimal</h4>
+	<p id="demo3"></p>
+	<script>
+		let x = 0xFFFFF;
+		document.getElementById("demo3").innerHTML = "0xFFFFF = " + x;
+	</script>
+
+	<h4>Number as Objects</h4>
+	<p id="demo4"></p>
+	<script>
+		let p = 8140;
+		let q = new Number(8140);
+		document.getElementById("demo4").innerHTML = typeof p + "<br>" + typeof q;
+	</script>
+
+</body>
+
+</html>

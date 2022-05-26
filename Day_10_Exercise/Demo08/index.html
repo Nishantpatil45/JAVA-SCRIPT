@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Search String</p>
+    <p id="search"></p>
+    <p>Replace "Maharashtra" with "Goa" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="replace">I am from Maharashtra</p>
+
+    <script>
+        function myFunction() {
+            let text = document.getElementById("replace").innerHTML;
+            document.getElementById("replace").innerHTML =
+                text.replace(/Maharashtra/i, "Goa");
+        }
+        let text = "I am from Maharashtra";
+        let n = text.search(/am/i);
+        document.getElementById("search").innerHTML = n;
+
+    </script>
+</body>
+
+</html>

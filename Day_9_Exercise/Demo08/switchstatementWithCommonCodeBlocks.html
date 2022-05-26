@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Switch Statement with Common Code Blocks</title>
+</head>
+<body>
+
+	<h4>Switch Statement with Common Code Blocks</h4>
+	<p id="demo"></p>
+	<script>
+	let txt;
+	switch (new Date().getDay()) 
+	{
+	  case 4:
+	  case 5:
+	    txt = "Weekend Coming Soon";
+	    break;
+	  case 0:
+	  case 6:
+	    txt = "Weekend";
+	    break;
+	  default:
+	    txt = "Waiting";
+	}
+	document.getElementById("demo").innerHTML = txt;
+	</script>
+
+</body>
+</html>

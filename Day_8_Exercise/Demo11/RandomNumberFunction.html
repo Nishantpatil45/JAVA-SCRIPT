@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Random Number with function</title>
+</head>
+
+<body>
+
+	<button onclick="document.getElementById('demo1').innerHTML = getRndInteger(0,10)">Generate Random Number</button>
+	<p id="demo1"></p>
+	<script>
+		function getRndInteger(min, max) {
+			return Math.floor(Math.random() * (max - min)) + min;
+		}
+	</script>
+</body>
+
+</html>

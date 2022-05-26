@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Methods</title>
+</head>
+
+<body>
+	<h4>to String</h4>
+	<p id="demo1"></p>
+	<script>
+		let a = 8140;
+		document.getElementById("demo1").innerHTML =
+			a.toString() + "<br>" +
+			(8140).toString() + "<br>" +
+			(8000 + 140).toString();
+	</script>
+
+	<h4>to Exponential</h4>
+	<p id="demo2"></p>
+	<script>
+		let b = 8.140;
+		document.getElementById("demo2").innerHTML =
+			b.toExponential() + "<br>" +
+			b.toExponential(2) + "<br>" +
+			b.toExponential(4) + "<br>" +
+			b.toExponential(6);
+	</script>
+
+	<h4>to Fixed</h4>
+	<p id="demo3"></p>
+	<script>
+		let c = 7.0301;
+		document.getElementById("demo3").innerHTML =
+			c.toFixed(0) + "<br>" +
+			c.toFixed(2) + "<br>" +
+			c.toFixed(4) + "<br>" +
+			c.toFixed(6);
+	</script>
+
+	<h4>to Precision</h4>
+	<p id="demo4"></p>
+	<script>
+		let d = 1.491;
+		document.getElementById("demo4").innerHTML = 
+			d.toPrecision() + "<br>" +
+			d.toPrecision(2) + "<br>" +
+			d.toPrecision(4) + "<br>" +
+			d.toPrecision(6);  
+	</script>
+
+	<h4>value Of</h4>
+	<p id="demo5"></p>
+	<script>
+		let e = 1491;
+		document.getElementById("demo5").innerHTML =
+			e.valueOf() + "<br>" +
+			(1491).valueOf() + "<br>" +
+			(1400 + 91).valueOf();
+	</script>
+
+</body>
+
+</html>

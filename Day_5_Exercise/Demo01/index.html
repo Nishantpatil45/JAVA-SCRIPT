@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Day5</title>
+</head>
+
+<body>
+	<p id="demo1"></p>
+	<script>
+		let d = 5;
+		let e = (7 + 6) * d;
+		document.getElementById("demo1").innerHTML = e;
+	</script>
+
+	<p id="demo2"></p>
+	<script>
+		let f = 5;
+		f += 15;
+		document.getElementById("demo2").innerHTML = f;
+	</script>
+
+	<p id="demo3"></p>
+	<script>
+		let fname = "Nishant";
+		let lname = "Patil";
+		document.getElementById("demo3").innerHTML = fname + "<br>" + lname; 
+	</script>
+
+	<p id="demo4"></p>
+	<script>
+		let x1 = 9.00;
+		let x2 = 9.01;
+		document.getElementById("demo4").innerHTML = x1 + "<br>" + x2;
+	</script>
+
+	<p id="demo5"></p>
+	<script>
+		let p = 9;
+		let q = 9;
+		let r = 5;
+		document.getElementById("demo5").innerHTML = (p == q) + "<br>" + (p == r);
+	</script>
+
+	<p id="demo6"></p>
+	<script>
+		const city = ["Shirpur", "Dhule", "Nashik", "Nandurbar"];
+		document.getElementById("demo6").innerHTML = city[1];
+	</script>
+
+	<p id="demo7"></p>
+	<script>
+		const emp = {
+			firstName: "Nishant",
+			lastName: "Patil",
+			company: "Webline India"
+		};
+		document.getElementById("demo7").innerHTML = emp.firstName + " " + emp.lastName + " is employee in " + emp.company
+	</script>
+
+	<p id="demo8"></p>
+	<script>
+		var g = myFunct(12, 13);
+		document.getElementById("demo8").innerHTML = g;
+		function myFunct(u, v) {
+			return u * v;
+		}
+	</script>
+
+	<p id="demo9"></p>
+	<script>
+		const flname = {
+			firstName: "Nishant",
+			lastName: "Patil",
+			id: 7030,
+			fullName: function () {
+				return this.firstName + " " + this.lastName;
+			}
+		};
+		document.getElementById("demo9").innerHTML = flname.fullName();
+	</script>
+
+
+	<p id="demo10"></p>
+	<script>
+		let text = "Nishant Patil";
+		document.getElementById("demo10").innerHTML = text.length;
+	</script>
+
+	<p id="demo11"></p>
+	<script>
+		let str1 = "Nashik,Dhule,Nandurbar";
+		document.getElementById("demo11").innerHTML = str1.slice(8, 15); 
+	</script>
+
+	<p id="mydiv12"></p>
+	<script>
+		let str2 = "Nashik,Dhule,Nandurbar";
+		document.getElementById("demo12").innerHTML = str2.substring(9, 12);
+	</script>
+
+	<p id="demo13"></p>
+	<script>
+		let str = "Nashik,Dhule,Nandurbar";
+		document.getElementById("demo13").innerHTML = str.substr(8, 17);
+	</script>
+
+	<button onmouseover="myFunct1()">Change</button>
+	<p id="demo14">Webline India</p>
+	<script>
+		function myFunct1() {
+			let text14 = document.getElementById("demo14").innerHTML;
+			document.getElementById("demo14").innerHTML = text14.replace("Hyline", "India");
+		}
+	</script>
+
+	<button onclick="myFunct2()">Change to Upper Case</button>
+	<p id="demo15">webline india</p>
+	<script>
+		function myFunct2() {
+			let text15 = document.getElementById("demo15").innerHTML;
+			document.getElementById("demo15").innerHTML = text15.toUpperCase();
+		}
+	</script>
+
+	<button onmouseout="myFunct3()">Change to Lower Case</button>
+	<p id="demo16">WEBLINE INDIA</p>
+	<script>
+		function myFunct3() {
+			let text16 = document.getElementById("demo16").innerHTML;
+			document.getElementById("demo16").innerHTML = text16.toLowerCase();
+		}
+	</script>
+
+	<p id="demo17"></p>
+	<script>
+		let t1 = "Web";
+		let t2 = "line";
+		let t3 = t1.concat(t2);
+		document.getElementById("demo17").innerHTML = t3;
+	</script>
+
+	<p id="demo18"></p>
+	<script>
+		let txt1 = "Webline india";
+		let txt2 = txt1.trim();
+		document.getElementById("demo18").innerHTML =
+			"Length txt1=" + txt1.length + "<br>Length2 txt2=" + txt2.length;
+	</script>
+
+	<p id="demo19"></p>
+	<script>
+		let text19 = "9";
+		document.getElementById("demo19").innerHTML = text19.padStart(7, 0);
+	</script>
+
+	<p id="demo20"></p>
+	<script>
+		let text20 = "9";
+		document.getElementById("demo20").innerHTML = text20.padEnd(7, 0);
+	</script>
+
+	<p id="demo21"></p>
+	<script>
+		var text21 = "Webline India";
+		document.getElementById("demo21").innerHTML = text21.charAt(6);
+	</script>
+
+	<p id="demo22"></p>
+	<script>
+		let text22 = "Webline India";
+		document.getElementById("demo22").innerHTML = text22.charCodeAt(0);
+	</script>
+
+	<p id="demo23"></p>
+	<script>
+		let text23 = "w,e,b,l,i,n,e";
+		const Arr = text23.split(",");
+		document.getElementById("demo23").innerHTML = Arr[4];
+	</script>
+
+
+	<p id="demo24"></p>
+	<script>
+		let str24 = "Webline India Ahmedabad";
+		document.getElementById("demo24").innerHTML = str24.indexOf("Gujrat");
+	</script>
+
+	<p id="demo25"></p>
+	<script>
+		let str25 = "Webline India Ahmedabad";
+		document.getElementById("demo25").innerHTML = str25.lastIndexOf("Mumbai");
+	</script>
+
+	<p id="demo26"></p>
+	<script>
+		let text26 = "Webline India Ahmedabad";
+		document.getElementById("demo26").innerHTML = text26.startsWith("Hyline");
+	</script>
+
+	<p id="demo27"></p>
+	<script>
+		let text27 = "Webline India Ahmedabad";
+		document.getElementById("demo27").innerHTML = text27.endsWith("Gujrat");
+	</script>
+
+	<p id="demo28"></p>
+	<script>
+		let str28 = "Webline India Ahmedabad";
+		document.getElementById("demo28").innerHTML = str28.search("India");
+	</script>
+
+	<p id="demo29"></p>
+	<script>
+		let text29 = "Webline India Ahmedabad";
+		document.getElementById("demo29").innerHTML = text29.match(/dia/g);
+	</script>
+</body>
+
+</html>
